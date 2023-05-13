@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
 export interface BreadProps {
-    priceUsd: number;
+  priceUsd: number
 }
 
-export function Bread({priceUsd}: BreadProps) {
-    return (
-        <>
-            <h1>Bread</h1>
-            <p>{priceUsd}</p>
-        </>
-    );
+export function Bread({ priceUsd }: BreadProps) {
+  return (
+    <>
+      <h1>Bread</h1>
+      <p>{priceUsd}</p>
+    </>
+  )
 }

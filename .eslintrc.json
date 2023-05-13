@@ -1,12 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "react",
-    "react-hooks",
-    "eslint-plugin-import",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "eslint-plugin-import", "prettier"],
   "env": {
     "browser": true
   },
@@ -17,9 +11,7 @@
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "project": [
-      "tsconfig.json"
-    ],
+    "project": ["tsconfig.json"],
     "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
@@ -28,20 +20,25 @@
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-unused-vars": ["warn", {"ignoreRestSiblings": true}],
+    "@typescript-eslint/no-unused-vars": ["warn", { "ignoreRestSiblings": true }],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
     "react/jsx-filename-extension": [
       "warn",
       {
-        "extensions": [
-          ".jsx",
-          ".tsx"
-        ]
+        "extensions": [".jsx", ".tsx"]
       }
     ],
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "no-shadow": ["error", {"builtinGlobals": false, "hoist": "functions", "allow": []}]
+    "object-curly-spacing": ["error", "always"],
+    "no-shadow": ["error", { "builtinGlobals": false, "hoist": "functions", "allow": [] }]
   },
   "settings": {
     "react": {

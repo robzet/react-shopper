@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
 export interface MilkProps {
-    priceUsd: number;
+  priceUsd: number
 }
 
-export function Milk({priceUsd}: MilkProps) {
-    return (
-        <>
-            <h1>Milk</h1>
-            <p>{priceUsd}</p>
-        </>
-    );
+export function Milk({ priceUsd }: MilkProps) {
+  return (
+    <>
+      <h1>Milk</h1>
+      <p>{priceUsd}</p>
+    </>
+  )
 }
